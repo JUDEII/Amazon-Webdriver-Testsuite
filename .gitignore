@@ -25,9 +25,9 @@ hs_err_pid*
 
 ##IntelliJ IDEA
 .idea
-.DS_Store
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !*/src/main/*/target/
 !*/src/test/*/target/
+.DS_Store
