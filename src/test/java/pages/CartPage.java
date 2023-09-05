@@ -50,6 +50,7 @@ public class CartPage {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(femaleQuantityValue));
         String qtyValue = driver.findElement(femaleQuantityValue).getText();
+        //note that sometimes the items that come up first for the female category can be the same item from the mens, since they are both under sponsored. This will sometimes lead to this assertion failing
         assertEquals(qtyValue, FEMALE_HAT_QUANTITY);
         System.out.println("product quantity displayed successfully. Quantity -> " + FEMALE_HAT_QUANTITY);
     }
